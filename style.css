@@ -51,7 +51,7 @@ h2 {
   padding: 1rem 1.5rem;
   margin-bottom: 1.5rem;
   border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(255,255,255,0.05);
+  box-shadow: 0 10px 20px rgba(255,111,97,0.3); /* constant glow */
   text-align: center;
   transition: transform 0.3s, box-shadow 0.3s;
   border: 1px solid #333;
@@ -111,3 +111,4 @@ footer {
 .project-card a:hover {
   text-decoration: underline;
 }
+
