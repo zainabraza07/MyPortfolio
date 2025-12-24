@@ -6,7 +6,7 @@ body {
 }
 
 header {
-  background: #1f1f1f; /* darker header */
+  background: #1f1f1f;
   color: #fff;
   padding: 2rem 1rem;
   text-align: center;
@@ -17,8 +17,8 @@ header {
   height: 150px;
   object-fit: cover;
   border-radius: 50%;
-  border: 4px solid #ff6f61; /* bright accent border */
-  box-shadow: 0 0 15px rgba(255,111,97,0.5); /* soft glow */
+  border: 4px solid #ff6f61;
+  box-shadow: 0 0 15px rgba(255,111,97,0.5);
   margin-bottom: 1rem;
 }
 
@@ -29,16 +29,16 @@ section {
 }
 
 h2 {
-  color: #ffca3a; /* bright headings */
+  color: #ffca3a;
   margin-bottom: 1rem;
-  border-bottom: 2px solid #444; /* subtle dark line */
+  border-bottom: 2px solid #444;
   padding-bottom: 0.5rem;
 }
 
 .skills span {
   display: inline-block;
-  background: #333; /* darker pill */
-  color: #ffca3a; /* bright text */
+  background: #333;
+  color: #ffca3a;
   padding: 6px 12px;
   margin: 5px;
   border-radius: 20px;
@@ -46,60 +46,49 @@ h2 {
   font-weight: 500;
 }
 
+/* Carousel */
+.projects-section {
+  position: relative;
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 20px;
+  overflow: hidden;
+}
+
+.projects-carousel {
+  display: flex;
+  gap: 20px;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
 .project-card {
-  background: #1f1f1f; /* dark card background */
-  padding: 1rem 1.5rem;
-  margin-bottom: 1.5rem;
+  flex: 0 0 400px;
+  background: #1f1f1f;
   border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(255,255,255,0.05);
+  padding: 20px;
   text-align: center;
   transition: transform 0.3s, box-shadow 0.3s;
   border: 1px solid #333;
+  opacity: 0.5;
+}
+
+.project-card.active {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(255,111,97,0.5);
+  opacity: 1;
 }
 
 .project-card h3 {
   margin-top: 0;
-  color: #ff6f61; /* bright accent for titles */
-}
-
-.contact-section a {
-  color: #00aaff; /* bright blue links */
-  text-decoration: none;
-}
-
-footer {
-  text-align: center;
-  padding: 1rem;
-  background: #1f1f1f;
-  color: #e0e0e0;
-  font-size: 14px;
-}
-
-.screenshot {
-  width: 300px;
-  height: auto;
-  margin: 10px 0;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(255,255,255,0.1);
-}
-
-.projects-section {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
-  padding: 20px;
-}
-
-.project-card:hover {
-  transform: scale(1.03);
-  box-shadow: 0 10px 20px rgba(255,111,97,0.3); /* bright hover glow */
+  color: #ff6f61;
 }
 
 .project-card img.screenshot {
   width: 100%;
-  max-width: 300px;
-  border-radius: 10px;
+  height: auto;
   margin: 10px 0;
+  border-radius: 10px;
 }
 
 .project-card a {
@@ -111,45 +100,8 @@ footer {
 .project-card a:hover {
   text-decoration: underline;
 }
-.projects-section {
-  position: relative;
-  padding: 40px 20px;
-  max-width: 1200px;
-  margin: auto;
-  overflow: hidden;
-}
 
-.projects-carousel {
-  display: flex;
-  gap: 20px;
-  overflow-x: auto; /* allows horizontal scroll */
-  scroll-behavior: smooth;
-  padding-bottom: 10px;
-}
-
-.projects-carousel::-webkit-scrollbar {
-  height: 8px;
-}
-.projects-carousel::-webkit-scrollbar-thumb {
-  background: #ff6f61; /* bright scrollbar */
-  border-radius: 4px;
-}
-
-.project-card {
-  flex: 0 0 300px; /* fixed width */
-  background: #1f1f1f;
-  border-radius: 10px;
-  padding: 20px;
-  text-align: center;
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.project-card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 10px 20px rgba(255,111,97,0.5);
-}
-
-/* Carousel Arrows */
+/* Carousel buttons */
 .carousel-btn {
   position: absolute;
   top: 50%;
@@ -167,3 +119,13 @@ footer {
 .left-btn { left: 10px; }
 .right-btn { right: 10px; }
 
+.contact-section a {
+  color: #00aaff;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #1f1f1f;
+  font-size: 14px;
+}
