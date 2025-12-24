@@ -84,3 +84,22 @@ pulseElements.forEach(el => {
     el.style.boxShadow = "none";
   });
 });
+
+// ---------------------------
+// 7. Horizontal Carousel for Project Cards
+// ---------------------------
+const carousel = document.querySelector('.projects-carousel');
+const leftBtn = document.querySelector('.left-btn');
+const rightBtn = document.querySelector('.right-btn');
+
+if(carousel && leftBtn && rightBtn) {
+  const scrollAmount = 320; // how much to scroll each click
+
+  rightBtn.addEventListener('click', () => {
+    carousel.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+  });
+
+  leftBtn.addEventListener('click', () => {
+    carousel.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+  });
+}
