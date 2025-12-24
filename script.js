@@ -1,3 +1,28 @@
+// ---------------------------
+// 1. Smooth Scroll for Navigation (Fixed)
+// ---------------------------
+document.addEventListener('DOMContentLoaded', function() {
+  // Only add smooth scroll if navigation links exist
+  const navLinks = document.querySelectorAll('nav a[href^="#"]');
+  
+  if(navLinks.length > 0) {
+    navLinks.forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href');
+        if(targetId !== '#') {
+          const targetElement = document.querySelector(targetId);
+          if(targetElement) {
+            targetElement.scrollIntoView({
+              behavior: 'smooth',
+              block: 'start'
+            });
+          }
+        }
+      });
+    });
+  }
+});
 // 2. Project Card Animation + Glow on Scroll
 // ---------------------------
 const cards = document.querySelectorAll('.project-card');
