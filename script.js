@@ -1,15 +1,3 @@
-// ---------------------------
-// 1. Smooth Scroll for Navigation
-// ---------------------------
-document.querySelectorAll('a[href^="#"]').forEach(link => {
-  link.addEventListener('click', function(e) {
-    e.preventDefault();
-    document.querySelector(this.getAttribute('href'))
-            .scrollIntoView({ behavior: 'smooth' });
-  });
-});
-
-// ---------------------------
 // 2. Project Card Animation + Glow on Scroll
 // ---------------------------
 const cards = document.querySelectorAll('.project-card');
