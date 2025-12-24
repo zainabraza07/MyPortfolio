@@ -13,7 +13,7 @@
   <img src="zainab.jpg" alt="Zainab Raza" class="profile-pic">
   <h1>Zainab Raza</h1>
   <p>Software Engineering Student</p>
-  <p>Passionate about building solutions using Python, Web Dev, and Machine Learning.</p>
+  <p id="intro-text"></p>
 </header>
 
 <section class="skills-section">
@@ -26,87 +26,86 @@
 
 <section class="projects-section">
   <h2>Projects</h2>
-  <div class="project-card">
-  <h3>Society Website 🌟</h3>
-  <p>A responsive website built for a student society to showcase trips, events, and team members. Focused on clean layout, responsive design, and interactive features like smooth scrolling.</p>
-  <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
-  <img src="society-website.jpg" alt="Society Website Screenshot" class="screenshot">
-  <p><a href="https://zainabraza07.github.io/hmc1/" target="_blank">View Live</a></p>
-</div>
 
-<div class="project-card">
-  <h3>Cozy Cafe Website ☕</h3>
-  <p>A modern, visually appealing website for a cafe featuring menus, gallery, and contact section. Designed for fast loading and responsive display on all devices.</p>
-  <p><strong>Technologies:</strong> HTML, CSS</p>
-  <img src="cozy-cafe.jpg" alt="Cozy Cafe Website Screenshot" class="screenshot">
-  <p><a href="https://zainabraza07.github.io/cozy-cafe/" target="_blank">View Live</a></p>
-</div>
+  <div class="carousel-wrapper">
+    <!-- Left Arrow -->
+    <button class="carousel-btn left-btn">&#8592;</button>
 
+    <!-- Carousel -->
+    <div class="carousel">
+      <div class="project-card active">
+        <h3>Society Website 🌟</h3>
+        <p>A responsive website built for a student society to showcase trips, events, and team members. Focused on clean layout, responsive design, and interactive features like smooth scrolling.</p>
+        <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
+        <img src="society-website.jpg" alt="Society Website Screenshot" class="screenshot">
+        <p><a href="https://zainabraza07.github.io/hmc1/" target="_blank">View Live</a></p>
+      </div>
 
-  <div class="project-card">
-    <h3>Hotel Management System (C++)</h3>
-    <p>Console based app for room booking and billing using file handling and functions.</p>
-  </div>
+      <div class="project-card">
+        <h3>Cozy Cafe Website ☕</h3>
+        <p>A modern, visually appealing website for a cafe featuring menus, gallery, and contact section. Designed for fast loading and responsive display on all devices.</p>
+        <p><strong>Technologies:</strong> HTML, CSS</p>
+        <img src="cozy-cafe.jpg" alt="Cozy Cafe Website Screenshot" class="screenshot">
+        <p><a href="https://zainabraza07.github.io/cozy-cafe/" target="_blank">View Live</a></p>
+      </div>
 
-  <div class="project-card">
-  <h3>GUI-Based Email System (Java)</h3>
-  <p>Built a complete Email System using Java with a graphical interface. Features include user login, inbox/outbox views, email composition, and account management. Designed using OOP and event-driven programming concepts.</p>
-</div>
+      <div class="project-card">
+        <h3>Hotel Management System (C++)</h3>
+        <p>Console based app for room booking and billing using file handling and functions.</p>
+      </div>
 
-  <div class="project-card">
-    <h3>Emotion Detection AI (Python)</h3>
-    <p>A text-based ML app that classifies user emotions using natural language processing.</p>
-</div>
+      <div class="project-card">
+        <h3>GUI-Based Email System (Java)</h3>
+        <p>Built a complete Email System using Java with a graphical interface. Features include user login, inbox/outbox views, email composition, and account management. Designed using OOP and event-driven programming concepts.</p>
+      </div>
 
-    <div class="project-card">
-    <h3>File Organizer Script (Python)</h3>
-    <p>Built a Python script that automatically organizes messy folders by grouping files into subfolders like <code>PDF_Files</code>, <code>JPG_Files</code>, etc. It uses <code>os</code> and <code>shutil</code> to do the heavy lifting.</p>
+      <div class="project-card">
+        <h3>Emotion Detection AI (Python)</h3>
+        <p>A text-based ML app that classifies user emotions using natural language processing.</p>
+      </div>
 
-    <div style="margin-top: 15px;">
-      <p style="font-weight: bold; margin-bottom: 5px;">Before organizing:</p>
-      <img src="before.png" alt="Before organizing screenshot" style="width:100%; max-width:400px; border-radius:10px;">
+      <div class="project-card">
+        <h3>File Organizer Script (Python)</h3>
+        <p>Built a Python script that automatically organizes messy folders by grouping files into subfolders like <code>PDF_Files</code>, <code>JPG_Files</code>, etc. It uses <code>os</code> and <code>shutil</code> to do the heavy lifting.</p>
+        <div style="margin-top: 15px;">
+          <p style="font-weight: bold; margin-bottom: 5px;">Before organizing:</p>
+          <img src="before.png" alt="Before organizing screenshot" style="width:100%; max-width:400px; border-radius:10px;">
+          <p style="font-weight: bold; margin-top: 15px; margin-bottom: 5px;">After organizing:</p>
+          <img src="after.png" alt="After organizing screenshot" style="width:100%; max-width:400px; border-radius:10px;">
+        </div>
+      </div>
 
-      <p style="font-weight: bold; margin-top: 15px; margin-bottom: 5px;">After organizing:</p>
-      <img src="after.png" alt="After organizing screenshot" style="width:100%; max-width:400px; border-radius:10px;">
+      <div class="project-card">
+        <h3>💌 Unmailed – The Unsent Letters Vault</h3>
+        <p>A Python GUI app that lets you write and store private, unsent emotional letters. Includes password protection, file saving, and the ability to view or delete your past letters.</p>
+        <p><strong>Technologies:</strong> Python, Tkinter, File I/O</p>
+        <p><strong>🔐 Password Screen</strong></p>
+        <img src="password.png" alt="Password screen" class="screenshot">
+        <p><strong>🏠 Home Page</strong></p>
+        <img src="unmailed-home.png" alt="Home page" class="screenshot">
+        <p><strong>📖 View Letters</strong></p>
+        <img src="view_letters.png" alt="View letters screen" class="screenshot">
+      </div>
+
+      <div class="project-card">
+        <h3>Inner Child – Mood Journal 🌙</h3>
+        <p>A reflective journal app inspired by BTS's "Inner Child." Users select a mood, view motivational quotes, and write journal entries. Entries are saved with timestamps, creating a digital archive of emotional states.</p>
+        <div class="screenshot-row">
+          <div class="screenshot-box">
+            <img src="home.png" alt="Home Screen" class="screenshot">
+            <p class="caption">🏠 Home Screen</p>
+          </div>
+          <div class="screenshot-box">
+            <img src="journal.png" alt="Journal Entry and Quote" class="screenshot">
+            <p class="caption">📝 Journal Entry</p>
+          </div>
+        </div>
+      </div>
     </div>
+
+    <!-- Right Arrow -->
+    <button class="carousel-btn right-btn">&#8594;</button>
   </div>
-  <div class="project-card">
-  <h3>💌 Unmailed – The Unsent Letters Vault</h3>
-  <p>
-    A Python GUI app that lets you write and store private, unsent emotional letters. Includes password protection,
-    file saving, and the ability to view or delete your past letters.
-  </p>
-  <p><strong>Technologies:</strong> Python, Tkinter, File I/O</p>
-
-  <p><strong>🔐 Password Screen</strong></p>
-  <img src="password.png" alt="Password screen" class="screenshot">
-
-  <p><strong>🏠 Home Page</strong></p>
-  <img src="unmailed-home.png" alt="Home page" class="screenshot">
-
-  <p><strong>📖 View Letters</strong></p>
-  <img src="view_letters.png" alt="View letters screen" class="screenshot">
-</div>
-<div class="project-card">
-  <h3>Inner Child – Mood Journal 🌙</h3>
-  <p>
-    A reflective journal app inspired by BTS's "Inner Child." Users select a mood, view motivational quotes, and write journal entries. Entries are saved with timestamps, creating a digital archive of emotional states.
-  </p>
-
-  <div class="screenshot-row">
-    <div class="screenshot-box">
-      <img src="home.png" alt="Home Screen" class="screenshot">
-      <p class="caption">🏠 Home Screen</p>
-    </div>
-    <div class="screenshot-box">
-      <img src="journal.png" alt="Journal Entry and Quote" class="screenshot">
-      <p class="caption">📝 Journal Entry</p>
-    </div>
-  </div>
-</div>
-
-
-  <!-- Add more project cards below as needed -->
 </section>
 
 <section class="contact-section">
@@ -114,18 +113,12 @@
   <p>Email: <a href="mailto:zainab199703@gmail.com">zainab199703@gmail.com</a></p>
   <p>LinkedIn: <a href="https://www.linkedin.com/in/zainabraza03" target="_blank">linkedin.com/in/zainabraza03</a></p>
   <p>GitHub: <a href="https://github.com/zainabraza07" target="_blank">zainabraza07</a></p>
-<button class="carousel-btn right-btn">&#8594;</button>
 </section>
-
 
 <footer>
   <p>&copy; 2025 Zainab Raza</p>
 </footer>
-  <script src="script.js"></script>
+
+<script src="script.js"></script>
 </body>
 </html>
-
-
-
-
-
