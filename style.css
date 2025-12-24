@@ -111,3 +111,59 @@ footer {
 .project-card a:hover {
   text-decoration: underline;
 }
+.projects-section {
+  position: relative;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.projects-carousel {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto; /* allows horizontal scroll */
+  scroll-behavior: smooth;
+  padding-bottom: 10px;
+}
+
+.projects-carousel::-webkit-scrollbar {
+  height: 8px;
+}
+.projects-carousel::-webkit-scrollbar-thumb {
+  background: #ff6f61; /* bright scrollbar */
+  border-radius: 4px;
+}
+
+.project-card {
+  flex: 0 0 300px; /* fixed width */
+  background: #1f1f1f;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(255,111,97,0.5);
+}
+
+/* Carousel Arrows */
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255,111,97,0.8);
+  color: white;
+  border: none;
+  font-size: 2rem;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.left-btn { left: 10px; }
+.right-btn { right: 10px; }
+
