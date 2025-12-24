@@ -89,23 +89,10 @@ footer {
   gap: 20px;
   padding: 20px;
 }
-.project-card {
-  background: #1f1f1f;
-  padding: 1rem 1.5rem;
-  margin-bottom: 1.5rem;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(255,255,255,0.05),
-              0 0 20px rgba(255,111,97,0.25); /* Add constant glow here */
-  text-align: center;
-  transition: transform 0.3s, box-shadow 0.3s;
-  border: 1px solid #333;
-}
-
 
 .project-card:hover {
   transform: scale(1.03);
-  box-shadow: 0 10px 20px rgba(255,111,97,0.3),
-              0 0 30px rgba(255,111,97,0.4); /* Stronger glow on hover */
+  box-shadow: 0 10px 20px rgba(255,111,97,0.3); /* bright hover glow */
 }
 
 .project-card img.screenshot {
@@ -124,4 +111,3 @@ footer {
 .project-card a:hover {
   text-decoration: underline;
 }
-
